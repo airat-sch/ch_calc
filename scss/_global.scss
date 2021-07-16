@@ -1,0 +1,21 @@
+html, body{
+	font-family: $roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1,5rem;
+	color: #000;
+}
+
+body{
+	min-width: 320px;
+	overflow-x: hidden;
+	background-color: #fff;
+	position: relative;
+}
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

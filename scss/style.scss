@@ -1,0 +1,89 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.c_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.calc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    &-left, &-right{
+        flex: 0 0 50%;
+    }
+    &-row{
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+    &-form-group{
+        margin-bottom: 15px;
+    }
+    &__label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+    &-result{
+        margin-bottom: 15px;
+        background-color: #FAFAFA;
+        padding: 15px;
+        &-group{
+            margin-bottom: 10px;
+        }
+        &__value{
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    }
+    &__btn{
+        padding: 15px;
+        cursor: pointer;
+        border: none;
+        &__clear{
+            background-color: #EFEFEF;
+            margin-right: 15px;
+        }
+        &__clear:hover, &__clear:focus{
+            background-color: #dcdcdc;
+            transition: all 250ms;
+        }        
+        &__calculate{
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        &__calculate:hover, &__calculate:focus{
+            background-color: #43A047;
+            transition: all 250ms;
+        } 
+    }
+}
+
+.c-star{
+    color: #e21f1f;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .calc-left, .calc-right{
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .calc__btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
