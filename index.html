@@ -15,56 +15,65 @@
       <form class="calc">
         <div class="calc-left">
           <div class="calc-form-group">
-            <label for="c_name" class="calc__label">Номенклатура товара</label>
-            <input class="calc__input" type="text" id="c_name" name="c_name" value=" " placeholder="Название товара">
+            <label for="c_ch_price" class="calc__label">Стоимость закупки, Руб</label>
+            <input class="calc__input" type="text" id="c_ch_price" name="c_ch_price" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_ch_price" class="calc__label">Стоимость в Китае Руб</label>
-            <input class="calc__input" type="text" id="c_ch_price" name="c_ch_price" value="0" placeholder="">
+            <label for="c_ag_delivery" class="calc__label">Стоимость доставки</label>
+            <input class="calc__input" type="text" id="c_ag_delivery" name="c_ag_delivery" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_ag_delivery" class="calc__label">Доставка до Агента</label>
-            <input class="calc__input" type="text" id="c_ag_delivery" name="c_ag_delivery" value="0" placeholder="">
+            <label for="c_outlay" class="calc__label">
+              Затраты на подготовку к отправке
+              <span class="support-hover" data-title="коробка,бирка, бумага, подарок, веревочка"><em>?</em></span>
+            </label>
+            <input class="calc__input" type="text" id="c_outlay" name="c_outlay" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_log_price" class="calc__label">Стоимость логистики</label>
-            <input class="calc__input" type="text" id="c_log_price" name="c_log_price" value="0" placeholder="">
+            <label for="c_wb_transit" class="calc__label">Транзит на WB</label>
+            <input class="calc__input" type="text" id="c_wb_transit" name="c_wb_transit" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_outlay" class="calc__label">Затраты на подготовку к отправке<br/>(коробка,бирка, бумага, подарок, веревочка)</label>
-            <input class="calc__input" type="text" id="c_outlay" name="c_outlay" value="0" placeholder="">
+            <label for="c_wb_transit" class="c_wb_percent">Процент комиссии WB, %</label>
+            <input class="calc__input" type="text" id="c_wb_percent" name="c_wb_percent" value="" placeholder="0">
           </div>
+          <div class="calc-form-group">
+            <label for="c_wb_transit" class="c_rc_percent">Процент налога от РЦ, %</label>
+            <input class="calc__input" type="text" id="c_rc_percent" name="c_rc_percent" value="" placeholder="0">
+          </div>                    
         </div>
         <div class="calc-right">
           <div class="calc-form-group">
-            <label for="c_wb_transit" class="calc__label">Транзит на WB</label>
-            <input class="calc__input" type="text" id="c_wb_transit" name="c_wb_transit" value="0" placeholder="">
-          </div>
-          <div class="calc-form-group">
             <label for="c_receipt" class="calc__label">Приемка</label>
-            <input class="calc__input" type="text" id="c_receipt" name="c_receipt" value="0" placeholder="">
+            <input class="calc__input" type="text" id="c_receipt" name="c_receipt" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_storage" class="calc__label">Стоимость хранения (исходя из оборач. 90)</label>
-            <input class="calc__input" type="text" id="c_storage" name="c_storage" value="0" placeholder="">
+            <label for="c_storage" class="calc__label">
+              Стоимость хранения
+              <span class="support-hover" data-title="исходя из оборач. 90"><em>?</em></span>
+            </label>
+            <input class="calc__input" type="text" id="c_storage" name="c_storage" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_pokat" class="calc__label">Покатушки (исх. Из выкупа 50%)</label>
-            <input class="calc__input" type="text" id="c_pokat" name="c_pokat" value="0" placeholder="">
+            <label for="c_pokat" class="calc__label">
+              Стоимость логистики до покупателя
+              <span class="support-hover" data-title="исх. Из выкупа 50%"><em>?</em></span>
+            </label>
+            <input class="calc__input" type="text" id="c_pokat" name="c_pokat" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_pokat" class="calc__label">РЦ</label>
-            <input class="calc__input" type="text" id="c_rc" name="c_rc" value="0" placeholder="">
+            <label for="c_pokat" class="calc__label">Цена продажи</label>
+            <input class="calc__input" type="text" id="c_rc" name="c_rc" value="" placeholder="0">
           </div>
         </div>
         <div class="calc-row">
           <div class="calc-result">
             <div class="calc-result-group">
-              <span class="calc-result__label">Комиссия WB 15%:</span>
+              <span class="calc-result__label">Комиссия WB:</span>
               <span class="calc-result__value" id="c_wb_commission">0</span>
             </div>
             <div class="calc-result-group">
-              <span class="calc-result__label">Налог 7% от РЦ:</span>
+              <span class="calc-result__label">Налог от РЦ:</span>
               <span class="calc-result__value" id="c_rc_commission">0</span>
             </div>
             <div class="calc-result-group">
