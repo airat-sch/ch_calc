@@ -79,7 +79,7 @@ body {
 .c_title {
   margin-top: 25px;
   margin-bottom: 25px;
-  color: #4CAF50;
+  color: #00CCFF;
 }
 
 .calc {
@@ -133,7 +133,7 @@ body {
 
 .calc-result__value {
   font-weight: bold;
-  color: #4CAF50;
+  color: #00CCFF;
 }
 
 .calc__btn {
@@ -155,12 +155,12 @@ body {
 }
 
 .calc__btn__calculate {
-  background-color: #4CAF50;
+  background-color: #00CCFF;
   color: #fff;
 }
 
 .calc__btn__calculate:hover, .calc__btn__calculate:focus {
-  background-color: #43A047;
+  background-color: #05afda;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;
@@ -230,7 +230,7 @@ span.support-hover:hover::before {
 }
 
 .support-hover em {
-  background: #4CAF50;
+  background: #00CCFF;
   border-radius: 20px;
   text-align: center;
   color: #fff;

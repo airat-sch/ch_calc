@@ -7,7 +7,7 @@
 .c_title{
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #4CAF50;
+    color: $blue;
 }
 
 .calc{
@@ -44,7 +44,7 @@
         }
         &__value{
             font-weight: bold;
-            color: #4CAF50;
+            color: $blue;
         }
     }
     &__btn{
@@ -60,11 +60,11 @@
             transition: all 250ms;
         }        
         &__calculate{
-            background-color: #4CAF50;
+            background-color: $blue;
             color: #fff;
         }
         &__calculate:hover, &__calculate:focus{
-            background-color: #43A047;
+            background-color: $blue-h;
             transition: all 250ms;
         } 
     }
@@ -127,7 +127,7 @@ span.support-hover:hover::before {
     cursor: pointer;
 }
 .support-hover em {
-    background: #4CAF50;
+    background: $blue;
     border-radius: 20px;
     text-align: center;
     color: #fff;

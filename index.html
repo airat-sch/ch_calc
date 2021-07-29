@@ -15,11 +15,17 @@
       <form class="calc">
         <div class="calc-left">
           <div class="calc-form-group">
-            <label for="c_ch_price" class="calc__label">Стоимость закупки, Руб</label>
+            <label for="c_ch_price" class="calc__label">
+              Стоимость товара
+              <span class="support-hover" data-title="Без учета транспортных расходов"><em>?</em></span>
+            </label>
             <input class="calc__input" type="text" id="c_ch_price" name="c_ch_price" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_ag_delivery" class="calc__label">Стоимость доставки</label>
+            <label for="c_ag_delivery" class="calc__label">
+              Логистика
+              <span class="support-hover" data-title="Доставка до вашего склада от производителя или продавца"><em>?</em></span>
+            </label>
             <input class="calc__input" type="text" id="c_ag_delivery" name="c_ag_delivery" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
@@ -30,7 +36,10 @@
             <input class="calc__input" type="text" id="c_outlay" name="c_outlay" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_wb_transit" class="calc__label">Транзит на WB</label>
+            <label for="c_wb_transit" class="calc__label">
+              Доставка до склада Wildberries на единицу
+              <span class="support-hover" data-title="Затраты по доставке товара с вашего склада до склада WB, в том числе используя транзитный склад, на единицу"><em>?</em></span>
+            </label>
             <input class="calc__input" type="text" id="c_wb_transit" name="c_wb_transit" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
@@ -40,40 +49,39 @@
         </div>
         <div class="calc-right">
           <div class="calc-form-group">
-            <label for="c_wb_transit" class="c_rc_percent">Процент налога от РЦ, %</label>
+            <label for="c_wb_transit" class="c_rc_percent">Налоги, %</label>
             <input class="calc__input" type="text" id="c_rc_percent" name="c_rc_percent" value="" placeholder="0">
-          </div>
-          <div class="calc-form-group">
-            <label for="c_receipt" class="calc__label">Приемка</label>
-            <input class="calc__input" type="text" id="c_receipt" name="c_receipt" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_storage" class="calc__label">
               Стоимость хранения
-              <span class="support-hover" data-title="исходя из оборач. 90"><em>?</em></span>
+              <span class="support-hover" data-title="Исходя из средней оборачиваемости"><em>?</em></span>
             </label>
             <input class="calc__input" type="text" id="c_storage" name="c_storage" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_pokat" class="calc__label">
               Стоимость логистики до покупателя
-              <span class="support-hover" data-title="исх. Из выкупа 50%"><em>?</em></span>
+              <span class="support-hover" data-title="Исходя из выкупа 50%. Т.е. это значит что товар съездит к покупателю, потом вернётся на склад WB и опять уедет к следующему покупателю. За каждый из отрезков WB возьмёт с вас полную стоимость"><em>?</em></span>
             </label>
             <input class="calc__input" type="text" id="c_pokat" name="c_pokat" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_pokat" class="calc__label">Цена продажи</label>
+            <label for="c_pokat" class="calc__label">
+              Цена продажи
+              <span class="support-hover" data-title="Цена по которой вы планируете продавать с учетом всех скидок"><em>?</em></span>
+            </label>
             <input class="calc__input" type="text" id="c_rc" name="c_rc" value="" placeholder="0">
           </div>
         </div>
         <div class="calc-row">
           <div class="calc-result">
             <div class="calc-result-group">
-              <span class="calc-result__label">Комиссия WB:</span>
+              <span class="calc-result__label">Комиссия Wildberries, итого с единицы:</span>
               <span class="calc-result__value" id="c_wb_commission">0</span>
             </div>
             <div class="calc-result-group">
-              <span class="calc-result__label">Налог от РЦ:</span>
+              <span class="calc-result__label">Налог, итого с единицы:</span>
               <span class="calc-result__value" id="c_rc_commission">0</span>
             </div>
             <div class="calc-result-group">
