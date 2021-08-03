@@ -110,6 +110,7 @@ body {
 
 .calc__label {
   display: block;
+  position: relative;
   margin-bottom: 5px;
 }
 
@@ -223,7 +224,6 @@ span.support-hover:hover::before {
 
 .support-hover {
   display: inline-block;
-  position: relative;
   color: #06C;
   text-decoration: none;
   cursor: pointer;
