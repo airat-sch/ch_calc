@@ -49,3 +49,14 @@ function calculate() {
 
 	return false;
 }
+
+$(document).ready( function(){
+	//With some options
+	$('.info').darkTooltip({
+		animation: 'flipIn',
+		gravity: 'north',
+		theme: 'light',
+		arrow: true,
+		trigger: 'hover'
+	});
+});

@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/darktooltip.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,33 +18,36 @@
           <div class="calc-form-group">
             <label for="c_ch_price" class="calc__label">
               Стоимость товара
-              <span class="support-hover" data-title="Без учета транспортных расходов"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Без учета транспортных расходов">?</a>
             </label>
             <input class="calc__input" type="text" id="c_ch_price" name="c_ch_price" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_ag_delivery" class="calc__label">
               Логистика
-              <span class="support-hover" data-title="Доставка до вашего склада от производителя или продавца"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Доставка до вашего склада от производителя или продавца">?</a>
             </label>
             <input class="calc__input" type="text" id="c_ag_delivery" name="c_ag_delivery" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_outlay" class="calc__label">
               Затраты на подготовку к отправке
-              <span class="support-hover" data-title="коробка,бирка, бумага, подарок, веревочка"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Коробка,бирка, бумага, подарок, веревочка">?</a>
             </label>
             <input class="calc__input" type="text" id="c_outlay" name="c_outlay" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_wb_transit" class="calc__label">
               Доставка до склада Wildberries на единицу
-              <span class="support-hover" data-title="Затраты по доставке товара с вашего склада до склада WB, в том числе используя транзитный склад, на единицу"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Затраты по доставке товара с вашего склада до склада WB, в том числе используя транзитный склад, на единицу">?</a>
             </label>
             <input class="calc__input" type="text" id="c_wb_transit" name="c_wb_transit" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_wb_transit" class="c_wb_percent">Процент комиссии WB, %</label>
+            <label class="calc__label">
+              Процент комиссии WB, %
+              <a href="#" class="info" data-tooltip="&lt;a target=&quot;_blank&quot; href=&quot;https://drive.google.com/file/d/1teMDUuYs4eDMVktxk_ZQmoV0hrj1iHAz/view?usp=sharing&quot;&gt;Тарифы&lt;/a&gt;">?</a>
+            </label>
             <input class="calc__input" type="text" id="c_wb_percent" name="c_wb_percent" value="" placeholder="0">
           </div>                 
         </div>
@@ -55,21 +59,21 @@
           <div class="calc-form-group">
             <label for="c_storage" class="calc__label">
               Стоимость хранения
-              <span class="support-hover" data-title="Исходя из средней оборачиваемости"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Исходя из средней оборачиваемости">?</a>
             </label>
             <input class="calc__input" type="text" id="c_storage" name="c_storage" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
-            <label for="c_pokat" class="calc__label">
+            <label class="calc__label">
               Стоимость логистики до покупателя
-              <span class="support-hover" data-title='Исходя из выкупа 50%. Т.е. это значит что товар съездит к покупателю, потом вернётся на склад WB и опять уедет к следующему покупателю. За каждый из отрезков WB возьмёт с вас полную стоимость &lt;a href="https://drive.google.com/file/d/1teMDUuYs4eDMVktxk_ZQmoV0hrj1iHAz/view?usp=sharing"&gt;согласно тарифам&lt;/a&gt;'><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Исходя из выкупа 50%. Т.е. это значит, что товар съездит к покупателю, потом вернётся на склад WB и опять уедет к следующему покупателю. За каждый из отрезков WB возьмёт с вас полную стоимость &lt;a target=&quot;_blank&quot; href=&quot;https://drive.google.com/file/d/1teMDUuYs4eDMVktxk_ZQmoV0hrj1iHAz/view?usp=sharing&quot;&gt;согласно тарифам&lt;/a&gt;">?</a>
             </label>
             <input class="calc__input" type="text" id="c_pokat" name="c_pokat" value="" placeholder="0">
           </div>
           <div class="calc-form-group">
             <label for="c_pokat" class="calc__label">
               Цена продажи
-              <span class="support-hover" data-title="Цена по которой вы планируете продавать с учетом всех скидок"><em>?</em></span>
+              <a href="#" class="info" data-tooltip="Цена по которой вы планируете продавать с учетом всех скидок">?</a>
             </label>
             <input class="calc__input" type="text" id="c_rc" name="c_rc" value="" placeholder="0">
           </div>
@@ -98,6 +102,8 @@
         </div>
       </form>
   </div>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.darktooltip.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
