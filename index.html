@@ -13,7 +13,7 @@
 <body>
   <div class="container">
       <h1 class="c_title">Калькулятор</h1>
-      <form class="calc">
+      <div class="calc">
         <div class="calc-left">
           <div class="calc-form-group">
             <label for="c_ch_price" class="calc__label">
@@ -97,10 +97,10 @@
               <span class="calc-result__value" id="c_roi">0</span>
             </div>             
           </div>
-          <button class="calc__btn calc__btn__clear" onclick="this.form.reset();">Очистить данные</button>
-          <button class="calc__btn calc__btn__calculate" id="c_calculate">Сделать рассчет</button>
+          <button class="calc__btn calc__btn__clear" onclick="location.reload(); return false;">Очистить данные</button>
+          <span class="calc__btn calc__btn__calculate" id="c_calculate">Сделать рассчет</span>
         </div>
-      </form>
+      </div>
   </div>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/jquery.darktooltip.js"></script>
